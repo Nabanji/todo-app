@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Satisfy&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 62.5%;
+    font-weight: 500;
+}
+
+h1 {
+    text-transform: capitalize;
+    font-size: 2rem;
+}
+
+form {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 40%;
+}
+
+form input {
+    outline: none;
+    padding-left: 4px;
+}
+
+form button {
+    text-transform: capitalize;
+    cursor: pointer;
+    background-color: orangered;
+    transition: all .3s ease;
+}
+
+form button:hover {
+    color: white;
+}
+
+.todo-container {
+    margin-top: 10px;
+    display: flex;
+    width: 40%;
+}
+
+.todo-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    list-style: none;
+    font-size: 1rem;
+}
+
+.todo-list li {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo-list li div {
+    width: 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.completed {
+    cursor: pointer;
+}
+
+.deleted {
+    cursor: pointer;
+    transition: .4s all ease-in-out;
+}
+
+.deleted:hover {
+    color: orangered;
+}
+
+.empty-todos {
+    font-size: 1.5rem;
+    color: red;
+}
